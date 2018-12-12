@@ -1,0 +1,64 @@
+- navbarCounter++
+
+header.section.page-header
+	// RD Navbar
+	.rd-navbar-wrap
+		nav.rd-navbar.rd-navbar-minimal(
+		data-layout=                'rd-navbar-fixed'
+		data-sm-layout=             'rd-navbar-fixed'
+		data-md-layout=             'rd-navbar-fixed'
+		data-md-device-layout=      'rd-navbar-fixed'
+		data-lg-layout=             'rd-navbar-static'
+		data-lg-device-layout=      'rd-navbar-fixed'
+		data-xl-layout=             'rd-navbar-static'
+		data-xl-device-layout=      'rd-navbar-static'
+		data-xxl-layout=            'rd-navbar-static'
+		data-xxl-device-layout=     'rd-navbar-static'
+		data-lg-stick-up-offset=    '46px'
+		data-xl-stick-up-offset=    '46px'
+		data-xxl-stick-up-offset=   '46px'
+		data-lg-stick-up=           'true'
+		data-xl-stick-up=           'true'
+		data-xxl-stick-up=          'true')
+			.rd-navbar-main-outer
+				.rd-navbar-main
+					// RD Navbar Panel
+					.rd-navbar-panel
+						// RD Navbar Toggle
+						button.rd-navbar-toggle(data-rd-navbar-toggle='#rd-navbar-nav-wrap-' + navbarCounter): span
+
+						// RD Navbar Brand
+						a.rd-navbar-brand(href='index.html')
+							+png(logo.default.trueSize)(srcset='images/' + logo.default.retina + '.png 2x')
+
+					.rd-navbar-main-element
+						.rd-navbar-nav-wrap(id='rd-navbar-nav-wrap-' + navbarCounter)
+							include ../includes/_navigation
+
+						// RD Navbar Search
+						.rd-navbar-search
+							
+							a.nav-icon(href='grid-layout.html')
+								svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='17px', height='17px', viewBox='0 0 17 17', enable-background='new 0 0 17 17', xml:space='preserve')
+									path(fill='none', stroke='', stroke-miterlimit='0', d='M4.775,0.588H0.708v4.286')
+									polyline(fill='none', stroke='', stroke-miterlimit='0', points='16.552,4.654 16.552,0.588 12.485,0.588 ')
+									polyline(fill='none', stroke='', stroke-miterlimit='0', points='12.485,16.432 16.552,16.432 16.552,12.525 ')
+									polyline(fill='none', stroke='', stroke-miterlimit='0', points='0.708,12.577 0.708,16.432 4.722,16.432 ')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M0.708,8.404')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M40.875,37.651')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M8.313-0.151')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M37.574,10.094')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M0.067,10.094')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M0.708,4.707')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M16.552,4.655')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M16.816,12.524')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M0.708,12.577')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M4.722,16.432')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M4.734,12.886')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M4.76,4.9')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M4.775,0.905')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M12.485,16.432')
+									path(fill='none', stroke='', stroke-miterlimit='10', d='M12.485,0.905')
+									circle(fill='', stroke='', stroke-miterlimit='10', cx='8.63', cy='8.193', r='0.911') 
+								
+								

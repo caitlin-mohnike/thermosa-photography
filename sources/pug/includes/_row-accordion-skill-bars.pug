@@ -1,0 +1,71 @@
+include ../components/_ui-card
+include ../components/_ui-progress-bar-linear
+
+.row.row-50.justify-content-lg-between.offset-top-1
+	.col-12
+		h3.section-title.text-center.wow-outer: span.wow.slideInDown Frequently Asked Questions
+	.col-lg-7.col-xl-6
+		
+		// Bootstrap collapse
+		#accordion1.card-group-custom.card-group-corporate.wow-outer(role='tablist' aria-multiselectable='false')
+			+card({
+				show: true,
+				cardClass: 'card-corporate',
+				parentId: 'accordion1', 
+				number: '1',
+				header: 'Do you provide any scripts with your templates?'
+			}).wow.fadeInDown(data-wow-delay='.05s')
+				p Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification.
+				
+			+card({
+				cardClass: 'card-corporate',
+				parentId: 'accordion1',
+				number: '2',
+				header: 'What do I receive when I order a template?'
+			}).wow.fadeInDown(data-wow-delay='.1s')
+				p After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.
+
+			+card({
+				cardClass: 'card-corporate',
+				parentId: 'accordion1',
+				number: '3',
+				header: 'In what formats are your templates available?'
+			}).wow.fadeInDown(data-wow-delay='.15s')
+				p Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.
+
+			+card({
+				cardClass: 'card-corporate',
+				parentId: 'accordion1',
+				number: '4',
+				header: 'What am I allowed to do with the templates?'
+			}).wow.fadeInDown(data-wow-delay='.2s')
+				p You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are the property of content providing companies and individuals. You are also not allowed to make more than one project using the same template.
+
+	.col-lg-5
+		
+		.progress-linear-outer.wow-outer
+			+progress-bar-linear({
+				title: 'Photography',
+				valueTo: '90'
+			}).wow.slideInDown(data-wow-delay='.05s')
+
+		.progress-linear-outer.wow-outer
+			+progress-bar-linear({
+				title: 'Creativity',
+				valueTo: '65',
+				progressMod: 'progress-red'
+			}).wow.slideInDown(data-wow-delay='.1s')
+
+		.progress-linear-outer.wow-outer
+			+progress-bar-linear({
+				title: 'Retouching',
+				valueTo: '100',
+				progressMod: 'progress-blue'
+			}).wow.slideInDown(data-wow-delay='.15s')
+			
+		.progress-linear-outer.wow-outer
+			+progress-bar-linear({
+				title: 'Communication',
+				valueTo: '75',
+				progressMod: 'progress-green'
+			}).wow.slideInDown(data-wow-delay='.2s')

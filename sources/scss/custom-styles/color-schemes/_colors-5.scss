@@ -1,0 +1,7 @@
+$primary: #c02921;
+
+$primary-lighten: lighten($primary, 5%);
+$primary-darken: darken(saturate(adjust_hue($primary, 0.33), 0.8372770294866996%), 23%);
+$primary-darker: darken(desaturate(adjust_hue($primary, -0.08080808080805468), 38.30576845502219%), 24.313725490196077%);
+
+$gray-700: darken(desaturate(adjust_hue(#5609cd, 12.428571428571445), 84.73946997823582%), 27.647058823529413%);

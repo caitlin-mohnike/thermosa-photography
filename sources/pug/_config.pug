@@ -1,0 +1,88 @@
+-
+	var
+		htmlClass = "wide wow-animation",
+		fonts = "//fonts.googleapis.com/css?family=Work+Sans:300,700,800%7CIBM+Plex+Sans:200,300,400,400i,600,700",
+		
+		navbarCounter = 0,
+		logo = {
+			name: 'CaseCraft',
+			default: { trueSize: 'logo-default-133x28', retina: 'logo-default-266x54' },
+			inverse: { trueSize: 'logo-inverse-141x21', retina: 'logo-inverse-281x45' },
+			light: { trueSize: 'logo-light-133x28', retina: 'logo-light-266x54' }
+		},
+		links = {
+			post: 'single-blog-post.html',
+			getTemplate: 'https://themeforest.net/item/casecraft-elegant-business-and-financial-company-multipage-html-template/21536362'
+		},
+		colors = {
+			primary: '#ebb85e'
+		},
+		menu = [
+			{
+				title: 'Home', 
+				category: 'home',  
+				link: 'index.html'
+			},
+			
+			{
+				title: 'Portfolio',
+				category: 'portfolio',
+				link: '#',
+				dropdown: [
+					{ title: 'Grid Layout' },
+					{ title: 'Masonry Layout' },
+					{ title: 'Modern Layout' },
+					{ title: 'Single Project' }
+				]
+			},
+			{
+				title: 'Services', 
+				category: 'services'
+			},
+			{
+				title: 'Blog',
+				category: 'blog',
+				link: '#',
+				dropdown: [
+					
+					{ title: 'Sidebar Blog' },
+					{ title: 'Single Blog Post', link: links.post }
+				] 
+			},
+			
+			{
+				title: 'Pages', 
+				category: 'pages', 
+				link: '#',
+				megamenu: [ 
+					{
+						banner: {
+							image: 'megamenu-banner-1-570x368',
+							button: "<a class='button button-sm button-primary button-winona' href='about-me.html'>About Me</a>"
+						}
+					},
+					{
+						list: [
+							{ title: '404 Page' },
+							{ title: '503 Page' },
+							{ title: 'Coming Soon' },
+							{ title: 'Under Construction' }, 
+							{ title: 'About Me' }
+							
+						]
+					},
+					{
+						list: [
+						{ title: 'Pricing' },
+						{ title: 'Search results' },
+						{ title: 'Services' },
+						{ title: 'Privacy policy' }
+						]
+					}
+				]
+			},
+			{
+				title: 'Contacts',
+				category: 'contacts'
+			}
+		];

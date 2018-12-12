@@ -1,0 +1,85 @@
+extends  ../_skeleton
+
+//- Includes
+
+
+block variables
+	- var activeCategory = 'home'
+	- var pageName = 'Home'
+
+block page
+	// Page Header
+	include ../sections/_header-minimal
+		
+	// Overlapping Screen
+	include ../sections/_section-fscreen-overlap
+		
+	
+	// Projects - Modern Layout
+	section.section.section-lg.bg-default
+		.container
+			.row.row-50
+				.col-12.text-center
+					h3.section-title.wow-outer: span.wow.slideInUp Portfolio
+				.col-12
+					include ../includes/_isotope-row-masonry
+				
+	// Advantages and Achievements
+	section.section.section-lg.text-center.bg-default
+		.container
+			h3.section-title.wow-outer: span.wow.slideInUp About Me
+			p.wow-outer: span.text-width-1.wow.slideInDown Since 2008, I’ve been providing my clients with quality photography and retouching services. Some of my works were awarded on a national level. Below are some facts about me.
+			.row.row-50
+				.col-6.col-md-3.wow-outer 
+					// Counter Minimal
+					article.counter-minimal.wow.slideInUp(data-wow-delay='.1s')
+						.counter-minimal-icon.linearicons-mustache-glasses
+						.counter-minimal-main: .counter 22
+						h5.counter-minimal-title Photography Awards
+
+				.col-6.col-md-3.wow-outer
+					// Counter Minimal
+					article.counter-minimal.wow.slideInUp(data-wow-delay='.1s')
+						.counter-minimal-icon.linearicons-camera2
+						.counter-minimal-main: .counter 156
+						h5.counter-minimal-title Photo Shoots
+
+				.col-6.col-md-3.wow-outer
+					// Counter Minimal
+					article.counter-minimal.wow.slideInUp(data-wow-delay='.1s')
+						.counter-minimal-icon.linearicons-shutter
+						.counter-minimal-main: .counter 10
+						h5.counter-minimal-title Years of Experience
+
+				.col-6.col-md-3.wow-outer
+					// Counter Minimal 
+					article.counter-minimal.wow.slideInUp(data-wow-delay='.1s')
+						.counter-minimal-icon.linearicons-picture
+						.counter-minimal-main: .counter 392
+						h5.counter-minimal-title Annual Clients
+
+	// Testimonials
+
+	section.section.section-lg.bg-gray-100.text-center
+		.container
+			h3.section-title Testimonials
+			include ../includes/_slick-widget-testimonials
+		
+	section.section.section-lg 
+		.container
+			include ../includes/_row-accordion-skill-bars
+		
+	include ../sections/_section-thin-cta
+		
+	// Latest Blog Posts
+	section.section.section-lg.bg-gray-100.text-center
+		.container
+			h3.section-title.wow-outer: span.wow.slideInDown Latest Blog Posts
+			include ../includes/_row-blog-3-cols
+				
+		
+	// Page Footer
+	include ../sections/_footer-standard
+	+footer-standard({
+		about: 'CaseCraft is one of the highest rated and most recommended advertising agencies. We employ the best marketing and promotion experts in the nation, while also using innovative techniques to attract more customers to your company.'
+	})

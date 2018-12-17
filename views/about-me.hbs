@@ -1,4 +1,4 @@
-about-me.hbs<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   {{>head}}
   <body>
@@ -10,12 +10,12 @@ about-me.hbs<!DOCTYPE html>
         <div class="breadcrumbs-custom-inner">
           <div class="container breadcrumbs-custom-container">
             <div class="breadcrumbs-custom-main">
-              <h6 class="breadcrumbs-custom-subtitle title-decorated">Pages</h6>
+              {{!-- <h6 class="breadcrumbs-custom-subtitle title-decorated">Pages</h6> --}}
               <h1 class="breadcrumbs-custom-title">About Me</h1>
             </div>
             <ul class="breadcrumbs-custom-path">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Pages</a></li>
+              <li><a href="/">Home</a></li>
+              {{!-- <li><a href="#">Pages</a></li> --}}
               <li class="active">About Me</li>
             </ul>
           </div>
@@ -25,7 +25,7 @@ about-me.hbs<!DOCTYPE html>
         <div class="container">
           <!-- Profile Modern-->
           <article class="profile-modern">
-            <div class="profile-modern-figure"><img class="profile-modern-image" src="images/team-1-336x336.jpg" alt="" width="336" height="336"/><a class="profile-modern-button" href="#"><span class="icon mdi mdi-facebook-messenger"></span><span class="icon mdi mdi-facebook-messenger"></span></a>
+            <div class="profile-modern-figure"><img class="profile-modern-image" src="images/main-photos/caitlin-wave.jpg" alt="" width="336" height="336"/>{{!-- <a class="profile-modern-button" href="#"><span class="icon mdi mdi-facebook-messenger"></span><span class="icon mdi mdi-facebook-messenger"></span></a> --}}
             </div>
             <div class="profile-modern-main">
               <div class="profile-modern-header">
@@ -34,7 +34,7 @@ about-me.hbs<!DOCTYPE html>
                   <p>Photographer</p>
                 </div>
                 <div class="profile-modern-item">
-                  <div class="group group-xs group-middle"><a class="icon icon-sm icon-creative mdi mdi-facebook" href="https://fb.me/thermosa.photography" target="_blank"></a><!-- <a class="icon icon-sm icon-creative mdi mdi-twitter" href="#"></a> --><a class="icon icon-sm icon-creative mdi mdi-instagram" href="https://www.instagram.com/thermosa.photography/" target="_blank"></a><!-- <a class="icon icon-sm icon-creative mdi mdi-google" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-linkedin" href="#"></a> --></div>
+                  <div class="group group-xs group-middle"><a class="icon icon-sm icon-creative mdi mdi-facebook" href="https://www.facebook.com/thermosa.photography/" target="_blank"></a><!-- <a class="icon icon-sm icon-creative mdi mdi-twitter" href="#"></a> --><a class="icon icon-sm icon-creative mdi mdi-instagram" href="https://www.instagram.com/thermosa.photography/" target="_blank"></a><!-- <a class="icon icon-sm icon-creative mdi mdi-google" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-linkedin" href="#"></a> --></div>
                 </div>
               </div>
               <div class="row row-30">
@@ -75,76 +75,7 @@ about-me.hbs<!DOCTYPE html>
           </article>
         </div>
       </section>
-      <!-- Nathan’s Projects-->
-      <section class="section section-lg bg-gray-100 text-center">
-        <div class="container">
-          <h3 class="section-title">Portfolio</h3>
-          <div class="isotope offset-top-2" data-isotope-layout="masonry" data-lightgallery="group" data-lg-thumbnail="false">
-            <div class="row row-30">
-              <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                          <!-- Thumbnail Corporate-->
-                          <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="images/gallery-masonry-1-370x256.jpg" alt="" width="370" height="256"/>
-                            <div class="thumbnail-corporate-caption">
-                              <p class="thumbnail-corporate-title"><a href="single-project.html">Mary Williams</a></p>
-                              <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="images/gallery-original-1.jpg" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                            </div>
-                            <div class="thumbnail-corporate-dummy"> </div>
-                          </article>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                          <!-- Thumbnail Corporate-->
-                          <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="images/gallery-masonry-2-370x464.jpg" alt="" width="370" height="464"/>
-                            <div class="thumbnail-corporate-caption">
-                              <p class="thumbnail-corporate-title"><a href="single-project.html">YouthWear</a></p>
-                              <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="images/gallery-original-2.jpg" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                            </div>
-                            <div class="thumbnail-corporate-dummy"> </div>
-                          </article>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                          <!-- Thumbnail Corporate-->
-                          <article class="thumbnail-corporate wow slideInUp"><img class="thumbnail-corporate-image" src="images/gallery-masonry-3-370x256.jpg" alt="" width="370" height="256"/>
-                            <div class="thumbnail-corporate-caption">
-                              <p class="thumbnail-corporate-title"><a href="single-project.html">Ultra Optix</a></p>
-                              <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="images/gallery-original-3.jpg" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                            </div>
-                            <div class="thumbnail-corporate-dummy"> </div>
-                          </article>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                          <!-- Thumbnail Corporate-->
-                          <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInUp"><img class="thumbnail-corporate-image" src="images/gallery-masonry-4-370x464.jpg" alt="" width="370" height="464"/>
-                            <div class="thumbnail-corporate-caption">
-                              <p class="thumbnail-corporate-title"><a href="single-project.html">Accessories Inc.</a></p>
-                              <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="images/gallery-original-4.jpg" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                            </div>
-                            <div class="thumbnail-corporate-dummy"> </div>
-                          </article>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                          <!-- Thumbnail Corporate-->
-                          <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="images/gallery-masonry-6-370x464.jpg" alt="" width="370" height="464"/>
-                            <div class="thumbnail-corporate-caption">
-                              <p class="thumbnail-corporate-title"><a href="single-project.html">Dwayne Winston</a></p>
-                              <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="images/gallery-original-6.jpg" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                            </div>
-                            <div class="thumbnail-corporate-dummy"> </div>
-                          </article>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                          <!-- Thumbnail Corporate-->
-                          <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="images/gallery-masonry-5-370x256.jpg" alt="" width="370" height="256"/>
-                            <div class="thumbnail-corporate-caption">
-                              <p class="thumbnail-corporate-title"><a href="single-project.html">Sue Peterson</a></p>
-                              <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="images/gallery-original-5.jpg" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                            </div>
-                            <div class="thumbnail-corporate-dummy"> </div>
-                          </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {{>portfolio}}
       <!-- Nathan’s Blog Posts-->
       <section class="section section-lg text-center">
         <div class="container">

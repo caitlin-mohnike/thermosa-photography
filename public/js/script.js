@@ -941,12 +941,12 @@
     }
 
     // UI To Top
-    if (isDesktop && !isNoviBuilder) {
-      $().UItoTop({
-        easingType: 'easeOutQuad',
-        containerClass: 'ui-to-top'
-      });
-    }
+    // if (isDesktop && !isNoviBuilder) {
+    //   $().UItoTop({
+    //     easingType: 'easeOutQuad',
+    //     containerClass: 'ui-to-top'
+    //   });
+    // }
 
     // RD Navbar
     if (plugins.rdNavbar.length) {

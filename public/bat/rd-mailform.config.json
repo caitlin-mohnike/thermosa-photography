@@ -3,6 +3,6 @@
   "host": "stmp.gmail.com",
   "port": 465,
   "username": "thermosaphotography@gmail.com",
-  "password": "process.env.EMAIL_PASSWORD",
+  "password": "S!ngsmile7gmail",
   "recipientEmail": "caitlin.mohnike@gmail.com"
 }

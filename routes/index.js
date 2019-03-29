@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   				"file_name": "christmas-tree/DSC_6168.jpg",
   				"photo_title": "Christmas Mini Session",
   				"photo_text": "test text",
-  				"photo_type": "Type 1",
+  				"photo_type": "Type Infant Family",
   				"photo_width": 370,
   				"photo_height": 276,
   				"large": ""
@@ -77,8 +77,8 @@ router.get('/portfolio-all', function(req, res, next) {
   			{
   				"file_name": "christmas-tree/DSC_6168.jpg",
   				"photo_title": "Christmas Mini Session",
-  				"photo_text": "test text",
-  				"photo_type": "Type 1",
+  				"photo_text": "",
+  				"photo_type": "Type Infant",
   				"photo_width": 370,
   				"photo_height": 276,
   				"large": ""
@@ -86,8 +86,8 @@ router.get('/portfolio-all', function(req, res, next) {
   			{
   				"file_name": "christmas-tree/DSC_4849.jpg",
   				"photo_title": "Christmas Mini Session",
-  				"photo_text": "test text",
-  				"photo_type": "Type 1",
+  				"photo_text": "",
+  				"photo_type": "Type Family",
   				"photo_width": 370,
   				"photo_height": 464,
   				"large": "thumbnail-corporate-lg"
@@ -185,15 +185,6 @@ router.get('/portfolio-all', function(req, res, next) {
   			},
   			//round 3
   			{
-  				"file_name": "portfolio/DSC_6647.jpg",
-  				"photo_title": "Christmas Mini Session",
-  				"photo_text": "test text",
-  				"photo_type": "Type 1",
-  				"photo_width": 370,
-  				"photo_height": 464,
-  				"large": "thumbnail-corporate-lg"
-  			},
-  			{
   				
   				"file_name": "portfolio/DSC_3428.jpg",
   				"photo_title": "Christmas Mini Session",
@@ -203,6 +194,15 @@ router.get('/portfolio-all', function(req, res, next) {
   				"photo_height": 276,
   				"large": ""
   			},
+        {
+          "file_name": "portfolio/DSC_6647.jpg",
+          "photo_title": "Christmas Mini Session",
+          "photo_text": "test text",
+          "photo_type": "Type 1",
+          "photo_width": 370,
+          "photo_height": 464,
+          "large": "thumbnail-corporate-lg"
+        },
   			{
   				"file_name": "portfolio/DSC_3522.jpg",
   				"photo_title": "Christmas Mini Session",
@@ -247,11 +247,66 @@ router.get('/portfolio-all', function(req, res, next) {
 router.get('/portfolio-portraits', function(req, res, next) {
   res.render('portfolio-portraits', 
   	{ 
-  		title: 'Portraits',
-  		subtitle: 'Test'
-  	 }
+      title: 'Thermosa Photography',
+      photos: [
+      //Pattern: Small, Large, Small, Large, Large, Small
+        {
+          "file_name": "christmas-tree/DSC_6168.jpg",
+          "photo_title": "Christmas Mini Session",
+          "photo_text": "test text",
+          "photo_type": "Infant",
+          "photo_width": 370,
+          "photo_height": 276,
+          "large": ""
+        },
+        {
+          "file_name": "christmas-tree/DSC_4849.jpg",
+          "photo_title": "Christmas Mini Session",
+          "photo_text": "test text",
+          "photo_type": "Type 1",
+          "photo_width": 370,
+          "photo_height": 464,
+          "large": "thumbnail-corporate-lg"
+        },
+        {
+          "file_name": "christmas-tree/DSC_4883.jpg",
+          "photo_title": "Christmas Mini Session",
+          "photo_text": "test text",
+          "photo_type": "Type 1",
+          "photo_width": 370,
+          "photo_height": 276,
+          "large": ""
+        },
+        {
+          "file_name": "christmas-tree/DSC_5787.jpg",
+          "photo_title": "Christmas Mini Session",
+          "photo_text": "test text",
+          "photo_type": "Type 1",
+          "photo_width": 370,
+          "photo_height": 464,
+          "large": "thumbnail-corporate-lg"
+        },
+        {
+          "file_name": "christmas-tree/DSC_5834.jpg",
+          "photo_title": "Christmas Mini Session",
+          "photo_text": "test text",
+          "photo_type": "Type 1",
+          "photo_width": 370,
+          "photo_height": 464,
+          "large": "thumbnail-corporate-lg"
+        },
+        {
+          "file_name": "christmas-tree/DSC_5989.jpg",
+          "photo_title": "Christmas Mini Session",
+          "photo_text": "test text",
+          "photo_type": "Family",
+          "photo_width": 370,
+          "photo_height": 276,
+          "large": ""
+        },
+      ]
 
-  	);
+    });
 });
 
 router.get('/portfolio-pets', function(req, res, next) {

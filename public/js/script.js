@@ -1520,7 +1520,8 @@
           'MF004': 'Please, define type of your form!',
           'MF254': 'Something went wrong with PHPMailer!',
           'MF255': 'Aw, snap! Something went wrong.'
-        };
+        },
+        recipients = "caitlin.mohnike@gmail.com";
 
       for (i = 0; i < plugins.rdMailForm.length; i++) {
         var $form = $(plugins.rdMailForm[i]),

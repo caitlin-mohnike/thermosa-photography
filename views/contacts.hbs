@@ -27,19 +27,19 @@
               <div class="layout-bordered-item-inner wow slideInUp">
                 <div class="icon icon-lg mdi mdi-phone text-primary"></div>
                 <ul class="list-0">
-                  <li><a class="link-default" href="tel:#">(971) 333-8463</a></li>
+                  <li><a class="link-default" href="tel:1-971-333-8463">(971) 333-8463</a></li>
                   {{!-- <li><a class="link-default" href="tel:#">1-800-9876-098</a></li> --}}
                 </ul>
               </div>
             </div>
             <div class="layout-bordered-item wow-outer">
               <div class="layout-bordered-item-inner wow slideInUp">
-                <div class="icon icon-lg mdi mdi-email text-primary"></div><a class="link-default" href="mailto:#">thermosaphotography@gmail.com</a>
+                <div class="icon icon-lg mdi mdi-email text-primary"></div><a class="link-default" href="mailto:caitlin@thermosa.photography">caitlin@thermosa.photography</a>
               </div>
             </div>
             <div class="layout-bordered-item wow-outer">
               <div class="layout-bordered-item-inner wow slideInUp">
-                <div class="icon icon-lg mdi mdi-map-marker text-primary"></div><a class="link-default" href="#">Oregon City, OR</a>
+                <div class="icon icon-lg mdi mdi-map-marker text-primary"></div><a class="link-default" {{!-- href="#" --}}>Oregon City, OR</a>
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@
         <div class="range justify-content-xl-between">
           <div class="cell-xl-12 align-self-center container">
             <div class="row">
-              <div class="col-lg-9 cell-inner">
+              <div class="col-lg-9 offset-2">
                 <div class="section-lg">
                   <h3 class="wow-outer"><span class="wow slideInDown">Contact Me</span></h3>
                   <!-- RD Mailform-->
@@ -76,7 +76,7 @@
                       <div class="col-md-6 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
                           <label class="form-label-outside" for="contact-phone">Phone</label>
-                          <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@PhoneNumber">
+                          <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Required">
                         </div>
                       </div>
                       <div class="col-12 wow-outer">
@@ -88,7 +88,7 @@
                     </div>
                     <div class="group group-middle">
                       <div class="wow-outer"> 
-                        <button class="button button-primary button-winona wow slideInRight" type="submit">Send Message</button>
+                        <button class="button button-primary button-winona wow fadeSlideInUp" type="submit">Send Message</button>
                       </div>
                       {{!-- <p>or use</p>
                       <div class="wow-outer"><a class="button button-primary-outline button-icon button-icon-left button-winona wow slideInLeft" href="#"><span class="icon text-primary mdi mdi-facebook-messenger"></span>Messenger</a></div> --}}
@@ -111,15 +111,7 @@
       <!-- Page Footer-->
             {{>footer}}
     </div>
-    <div class="preloader"> 
-      <div class="preloader-logo"><img src="images/logo-default-133x28.png" alt="" width="133" height="28" srcset="images/logo-default-266x54.png 2x"/>
-      </div>
-      <div class="preloader-body">
-        <div id="loadingProgressG">
-          <div class="loadingProgressG" id="loadingProgressG_1"></div>
-        </div>
-      </div>
-    </div>
+    {{>preloader}}
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->

@@ -1,5 +1,5 @@
 {
-  "useSmtp": true,
+  "useSmtp": false,
   "host": "stmp.gmail.com",
   "port": 465,
   "username": "thermosaphotography@gmail.com",

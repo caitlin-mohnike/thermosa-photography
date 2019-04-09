@@ -12,10 +12,11 @@ router.post('/send-email', function(req, res) {
   		from: req.body.email,
   		to: "thermosaphotography@gmail.com",
   		subject: "Contact Request - "+req.body.name[0]+" "+req.body.name[1],
-  		text: req.body.message
+  		text: req.body.message,
+  		html: '<strong>'+req.body.message+'</strong>'
   	};
-  	console.log(msg);
   	sgMail.send(msg);
+  	res.send('MF000')
 });
 
 module.exports = router;

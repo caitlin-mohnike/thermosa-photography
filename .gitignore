@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+sendgrid.env
+
+# SSL files
+thermosa-photography.csr
+thermosa-photography.key
+thermosa_photography.ca-bundle
+thermosa_photography.crt
+server.key

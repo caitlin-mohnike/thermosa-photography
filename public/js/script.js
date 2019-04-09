@@ -1511,7 +1511,6 @@
 
     // RD Mailform
     if (plugins.rdMailForm.length) {
-      console.log(rdMailForm);
       var i, j, k,
         msg = {
           'MF000': 'Successfully sent!',

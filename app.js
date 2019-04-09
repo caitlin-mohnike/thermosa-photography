@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var emailRouter = require('./routes/email');
 
 var hbs = require('hbs');
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/email', emailRouter);
 
 app.post('/bat/rd-mailform.php', function (req, res) {
   res.send('POST request to the homepage')

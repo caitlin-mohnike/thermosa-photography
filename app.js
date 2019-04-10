@@ -12,6 +12,9 @@ var hbs = require('hbs');
 
 var app = express();
 
+var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
+app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
+
 require('dotenv').config();
 
 // view engine setup
@@ -30,9 +33,15 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/email', emailRouter);
 
-app.post('/bat/rd-mailform.php', function (req, res) {
-  res.send('POST request to the homepage')
-})
+app.use (function (req, res, next) {
+    if (req.secure) {
+        // request was via https, so do no special handling
+        next();
+    } else {
+        // request was via http, so redirect to https
+        res.redirect('https://' + req.headers.host + req.url);
+    }
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

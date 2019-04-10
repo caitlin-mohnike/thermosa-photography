@@ -9,14 +9,15 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 router.post('/send-email', function(req, res) {
 
   	const msg = {
-  		from: req.body.email,
+  		from: "caitlin.mohnike@gmail.com",
   		to: "thermosaphotography@gmail.com",
   		subject: "Contact Request - "+req.body.name[0]+" "+req.body.name[1],
   		text: req.body.message,
-  		html: '<strong>'+req.body.message+'</strong>'
+  		html: '<strong>'+req.body.message+' '+req.body.from+'</strong>'
   	};
-  	sgMail.send(msg);
-  	res.send('MF000')
+  	sgMail.send(msg, function(){
+  		res.send('MF000')
+  	});
 });
 
 module.exports = router;

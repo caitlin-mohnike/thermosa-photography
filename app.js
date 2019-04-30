@@ -12,10 +12,8 @@ var hbs = require('hbs');
 
 var app = express();
 
-var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
-app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
-
-require('dotenv').config();
+// var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
+// app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
